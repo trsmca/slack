@@ -1,6 +1,6 @@
 node {
    
-    stage('Checkout Test 1') { 
+    stage('Checkout Test 12') { 
         checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/trsmca/slack.git']]])
        
     }
