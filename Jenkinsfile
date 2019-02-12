@@ -2,7 +2,7 @@ node {
     
     stage('Checkout Test 1234567') { 
  
-        checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/trsmca/slack2.git']]])
+        checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/trsmca/slack3.git']]])
        
     }
       stage('SonarQube analysis') {
