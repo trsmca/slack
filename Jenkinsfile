@@ -30,7 +30,7 @@ node {
   } 
 }
 stage('Checkout') { 
-        checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/srigudav07/Learning/tree/master/GitHomeTask']]])
+        checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/srigudav07/Learning.git']]])
        
     }
     stage('SonarQube analysis') {
