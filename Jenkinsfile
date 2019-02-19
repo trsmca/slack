@@ -1,7 +1,7 @@
 node {
 stage('Checkout https://github.com/trsmca/slack') {
 checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [],
-userRemoteConfigs: [[url: 'https://github.com/trsmca/slack']]])
+userRemoteConfigs: [[url: 'https://github.com/trsmca/slack3']]])
 }
 stage('SonarQube analysis')
 {
@@ -12,7 +12,7 @@ sh "C:/'Program Files (x86)'/Jenkins/tools/hudson.plugins.sonar.SonarRunnerInsta
 }
 stage('Checkout https://github.com/trsmca/slack3') {
 checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [],
-userRemoteConfigs: [[url: 'https://github.com/trsmca/slack3']]])
+userRemoteConfigs: [[url: 'https://github.com/trsmca/slack']]])
 }
 stage('SonarQube analysis')
 {
