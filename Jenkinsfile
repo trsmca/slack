@@ -1,7 +1,7 @@
 node {
-stage('Checkout https://github.com/trsmca/Test1') {
+stage('Checkout ') {
 checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [],
-userRemoteConfigs: [[url: 'https://github.com/trsmca/Test1']]])
+userRemoteConfigs: [[url: '']]])
 }
 stage('SonarQube analysis')
 {
