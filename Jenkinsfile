@@ -1,7 +1,7 @@
 node {
-stage('Checkout https://github.com/trsmca/slack.git') {
+stage('Checkout https://github.com/trsmca/Slack1.git') {
 checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [],
-userRemoteConfigs: [[url: 'https://github.com/trsmca/slack.git']]])
+userRemoteConfigs: [[url: 'https://github.com/trsmca/Slack1.git']]])
 }
 stage('SonarQube analysis')
 {
